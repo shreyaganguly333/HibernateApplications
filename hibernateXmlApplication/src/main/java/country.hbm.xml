@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC   "-//Hibernate/Hibernate Mapping DTD 5.3//EN"   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>  
+	<class name="org.anudip.hibernateXmlApplication.bean.Country" table="country">
+      <id name="countryCode" column="country_code">
+       <generator class="assigned"></generator>
+    </id>
+    <property name="countryName" column="country_name"/>
+   <property name="capital" column="capital"/>
+   <property name="gdp" column="gdp"/>
+   </class>
+</hibernate-mapping>
